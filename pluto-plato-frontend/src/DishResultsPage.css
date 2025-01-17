@@ -1,0 +1,53 @@
+.dish-results-container {
+    padding: 20px;
+}
+
+.dish-results-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dish-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.dish-card h3 {
+    margin: 10px 0;
+}
+
+.dish-card input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.dish-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dish-card button:hover {
+    background-color: #218838;
+}
+
+.go-to-cart {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.go-to-cart:hover {
+    background-color: #0056b3;
+}

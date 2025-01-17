@@ -1,0 +1,94 @@
+/* Style for the overall container */
+.adminpage-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Button section */
+.button-section {
+  margin-bottom: 20px;
+}
+
+.admin-button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.admin-button:hover {
+  background-color: #0056b3;
+}
+
+/* Image section */
+.image-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+/* Query section */
+.query-section {
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.error-message {
+  color: #f44336;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Result section */
+.result-section {
+  margin-top: 30px;
+}
+
+.result-table {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+pre {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}

@@ -1,0 +1,126 @@
+/* RestaurantDishPage.css */
+
+/* Container for the entire page */
+.dish-results-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading styling */
+  .dish-results-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Container for all the dishes displayed */
+  .dish-results-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Styling for each dish card */
+  .dish-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .dish-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Dish name styling */
+  .dish-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for dish details like vendor, price, rating, etc. */
+  .dish-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Input field for quantity */
+  .dish-card input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Add to cart button */
+  .dish-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .dish-card button:hover {
+    background-color: #218838;
+  }
+  
+  /* Go to cart button */
+  .go-to-cart {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .go-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .dish-results-container {
+      padding: 15px;
+    }
+  
+    .dish-results-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .go-to-cart {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dish-results-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .go-to-cart {
+      width: 100%;
+    }
+  }
+  
