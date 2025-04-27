@@ -1,131 +1,192 @@
-InformationIntegrationProject-IIA-
+# InformationIntegrationProject-IIA-
 
-📚 Overview
-InformationIntegrationProject-IIA- is a course project for Information Integration and Analytics (IIA). The project focuses on integrating and analyzing information from various sources, particularly in the context of restaurants, dishes, and vendors. It aims to create a system that can process and unify data from different formats and sources, making it accessible and useful for applications like restaurant recommendations, menu analysis, and vendor management.Having following objective in a robust manner
-(a)  Project Statement, Why you have chosen this project (Motivation, Importance, etc), and for whom you are building this II system (set of close-to-real applications, use-cases, stakeholders, and purpose), and focus on innovative application(s)/use-case(s)
-(b) underlying data sources (Type of sources - relational/non-relation, etc, Schemas and/or APIs (input and output). Populating the data in these sources, what query execution support they have, how do they communicate with the Data Integration system (i.e. communication protocol)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
+![Node.js](https://img.shields.io/badge/Node.js-14%2B-green?style=for-the-badge&logo=node.js)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge)
 
-(c) Defining the Data Integration System : Hybrid
+---
 
-(d) Schema matching and Mapping between Target and Sources 
+## 📚 Overview
 
-(e)  Query Interface ,Query Federation, Execution and Results Integration 
-(f)  Query Analyzer and Decomposer
+**InformationIntegrationProject-IIA-** is a course project for Information Integration and Analytics (IIA).  
+The project focuses on integrating and analyzing information from various sources, particularly in the context of restaurants, dishes, and vendors.  
+It aims to create a system that can **process and unify data from different formats and sources**, making it accessible and useful for:
 
-(g)  Query federation and Execution-with load and traffic balancer
+- Restaurant recommendations
+- Menu analysis
+- Vendor management
 
-(h)  Aggregating the Results and Displaying the same
+The project has the following robust objectives:
 
-🧩 Backend Functionality
-The backend, primarily written in Python, handles the core data processing and integration tasks. Key functionalities include:
+---
 
-Data Extraction:
-Scripts like addpdf_llm.py and extract_dish_info.py extract relevant information from PDFs and other documents.
+### 🧠 Objectives
 
-Entity Analysis:
-Modules such as entityanalysis.py and docanalysis.py analyze text to identify entities like dish names, restaurant names, and vendor details.
+- **(a) Project Statement**:  
+  Motivation: To create a scalable and dynamic system for real-world applications.  
+  Importance: Enhances data accessibility and utility for stakeholders such as restaurant owners, vendors, and end-users.  
+  Target Users: Restaurants, food delivery apps, vendors, and foodies.  
+  Focus: Innovative applications like real-time menu analytics and vendor comparison systems.
 
-Natural Language Processing:
-Files like naturallanguageforadmin.py and naturalquery.py process natural language inputs, enabling users to query the system using everyday language.
+- **(b) Underlying Data Sources**:  
+  - Type: Relational databases (MySQL)  
+  - Schemas/APIs: Well-defined schemas for structured data exchange  
+  - Data Population: Populated via extraction scripts and document analysis  
+  - Communication Protocols: Standard SQL and REST APIs
 
-Data Mapping and Integration:
-algomapping.py and contextfromsql.py assist in mapping and integrating or deletion data from various sources into a unified format.
+- **(c) Defining the Data Integration System**:  
+  - Approach: **Hybrid** — combines structured integration with AI-based enhancements.
 
-API Provisioning:
-app.py sets up the web server and defines API routes for frontend consumption.
+- **(d) Schema Matching and Mapping**:  
+  - Smart mapping between a **global schema** (with `Restaurant` and `Dishes` tables) and different vendor-specific schemas.
 
-Caching:
-.json files contain the cache and mets data for fast processing
+- **(e) Query Interface, Query Federation, Execution, and Result Integration**:  
+  - Allowing federated query execution across databases with result integration.
 
-Note:
-You must define a global _Schema that must contain atleast two tables namely Restaurent and Dishes and add the data-base info like user-name and passowrd in global conn however datbases should be on same network however they can run different machines with diffent schemas 
-🎨 Frontend Functionality
-The frontend, located in the pluto-plato-frontend/ directory, is responsible for presenting the integrated data to users. Its functionalities include:
+- **(f) Query Analyzer and Decomposer**:  
+  - Breaks down complex queries for optimized and efficient execution.
 
-User Interface: Displays information about restaurants, dishes, and vendors in an organized manner.
+- **(g) Query Federation with Load and Traffic Balancer**:  
+  - Efficient load distribution across databases to minimize latency.
 
-Search and Query: Allows users to search for specific dishes or restaurants using natural language queries.
+- **(h) Aggregating and Displaying Results**:  
+  - Merging, ranking, and presenting results seamlessly on the frontend.
 
-Interactive Elements: Provides interactive components for users to filter and sort data based on various criteria.
+---
 
-🚀 Getting Started
-Prerequisites
-Ensure you have the following installed on your system:
+## 🧩 Backend Functionality
 
-Python 3.8+
+The backend, primarily written in **Python**, handles core data processing and integration tasks.
 
-Node.js 14+
+### Major Components:
 
-🔧 Backend Setup
-Navigate to the backend directory:
+- **Data Extraction**:  
+  `addpdf_llm.py`, `extract_dish_info.py` — extract restaurant and dish information from semi-structured sources like PDFs.
 
-bash
-Copy
-Edit
-cd backend
-(Optional) Create and activate a virtual environment:
+- **Entity Analysis**:  
+  `entityanalysis.py`, `docanalysis.py` — identify entities such as dish names, restaurant names, and vendors.
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install the required Python packages:
+- **Natural Language Processing**:  
+  `naturallanguageforadmin.py`, `naturalquery.py` — process natural language queries from users/admins.
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the backend server:
+- **Data Mapping and Integration**:  
+  `algomapping.py`, `contextfromsql.py` — unify data by mapping different schemas, support addition and deletion.
 
-bash
-Copy
-Edit
-python app.py  # Replace 'app.py' with the actual entry point if different
-🎯 Frontend Setup
-Navigate to the frontend directory:
+- **API Provisioning**:  
+  `app.py` — defines and exposes backend routes for frontend consumption.
 
-bash
-Copy
-Edit
-cd pluto-plato-frontend
-Install the necessary Node.js packages:
+- **Caching**:  
+  `.json` files — store intermediate cache and metadata for faster processing.
 
-bash
-Copy
-Edit
-npm install
-Start the frontend development server:
+### Important Note
 
-bash
-Copy
-Edit
-npm start
-🌐 Accessing the Application
-Once both servers are running, open your web browser and navigate to:
+- Define a **global schema** containing at least two tables:  
+  `Restaurant` and `Dishes`.
+- Add database connection info (user, password) in a global connection config.
+- Databases must be on the **same network** (can be on **different machines** and **different schemas**).
 
-arduino
-Copy
-Edit
+---
+
+## 🎨 Frontend Functionality
+
+Located in the `pluto-plato-frontend/` directory, the frontend is built using **React.js** and offers:
+
+- **User Interface**:  
+  Displays restaurant, dish, and vendor data cleanly and intuitively.
+
+- **Search and Query Support**:  
+  Users can search restaurants or dishes using **natural language**.
+
+- **Interactive Elements**:  
+  Filter, sort, and navigate easily using dynamic UI components.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have installed:
+
+- **[Python 3.8+](https://www.python.org/downloads/)**
+- **[Node.js 14+](https://nodejs.org/en/download/)**
+
+---
+
+### 🔧 Backend Setup
+
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
+
+2. (Optional) Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the backend server:
+   ```bash
+   python app.py  # (or the appropriate entry point)
+   ```
+
+---
+
+### 🎯 Frontend Setup
+
+1. Navigate to the frontend directory:
+   ```bash
+   cd pluto-plato-frontend
+   ```
+
+2. Install Node.js dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+---
+
+### 🌐 Accessing the Application
+
+Open your browser and visit:
+
+```
 http://localhost:3000
+```
+
 (or the port specified in your configuration)
 
-✨ Features
-Extraction of restaurant and dish information from semi-structured sources.
+---
 
-Natural language query support.
+## ✨ Features
 
-Data integration from multiple vendors.
+- 🔍 Extraction of restaurant and dish information from semi-structured sources
+- 🗣️ Natural language query support
+- 🔗 Data integration across multiple vendors
+- 🖥️ User-friendly frontend interface
+- ⚡ Fast caching and smart query decomposition
+- 🔄 Federated query processing and load balancing
 
-User-friendly frontend interface.
+---
 
-🤝 Credits
+## 🤝 Credits
+
 This repository contains code created through the combined efforts of:
 
-@aditya22041
+- [@aditya22041](https://github.com/aditya22041)
+- [@A-WASIF](https://github.com/A-WASIF)
+- [@aastha1708](https://github.com/aastha1708)
 
-@A-WASIF
-
-@aastha1708
-
-Uploaded with their permission, acknowledging their original contributions.
+> Uploaded with their permission, acknowledging their original contributions. 🚀
