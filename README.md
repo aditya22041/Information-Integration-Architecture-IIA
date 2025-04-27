@@ -1,4 +1,4 @@
-# InformationIntegrationProject-IIA-
+# Pluto Plato 
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
 ![Node.js](https://img.shields.io/badge/Node.js-14%2B-green?style=for-the-badge&logo=node.js)
@@ -9,7 +9,7 @@
 
 ## 📚 Overview
 
-**InformationIntegrationProject-IIA-** is a course project for Information Integration and Application (IIA).  
+**Pluto plato** is a course project for Information Integration and Application (IIA).  
 The project focuses on integrating and analyzing information from various sources, particularly in the context of restaurants, dishes, and vendors.  
 It aims to create a system that can **process and unify data from different formats and sources**, making it accessible and useful for:
 
@@ -62,10 +62,10 @@ The backend, primarily written in **Python**, handles core data processing and i
 ### Major Components:
 
 - **Data Extraction**:  
-  `addpdf_llm.py`, `extract_dish_info.py` — extract restaurant and dish information from semi-structured sources like PDFs.
+  `addpdf_llm.py`, `extract_dish_info.py` — extract restaurant and dish information from semi-structured sources like PDFs in context of a given sql query.
 
 - **Entity Analysis**:  
-  `entityanalysis.py`, `docanalysis.py` — identify entities such as dish names, restaurant names, and vendors.
+  `entityanalysis.py`, `docanalysis.py` — identify entities such as dish names, restaurant names, and vendors in context of a fiven sql query.
 
 - **Natural Language Processing**:  
   `naturallanguageforadmin.py`, `naturalquery.py` — process natural language queries from users/admins.
