@@ -9,7 +9,7 @@
 
 ## 📚 Overview
 
-**InformationIntegrationProject-IIA-** is a course project for Information Integration and Analytics (IIA).  
+**InformationIntegrationProject-IIA-** is a course project for Information Integration and Application (IIA).  
 The project focuses on integrating and analyzing information from various sources, particularly in the context of restaurants, dishes, and vendors.  
 It aims to create a system that can **process and unify data from different formats and sources**, making it accessible and useful for:
 
