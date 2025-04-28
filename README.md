@@ -9,7 +9,7 @@
 
 ## 📚 Overview
 
-**Pluto plato** is a course project for Information Integration and Application (IIA).  
+**Pluto plato** Information Integration Application (IIA) course project: end-to-end ETL pipelines, schema matching, federated SQL querying, and AI-driven analytics for restaurant/vendor data. Built with Python, React, and LLM-powered natural-language interfaces.  
 The project focuses on integrating and analyzing information from various sources, particularly in the context of restaurants, dishes, and vendors.  
 It aims to create a system that can **process and unify data from different formats and sources**, making it accessible and useful for:
 
